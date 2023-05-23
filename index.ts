@@ -52,7 +52,7 @@ async function createAndPostImage() {
 }
 
 // Run this on a cron job
-const scheduleExpression = '0 */3 * * *'; // Run once every three hours in prod
+const scheduleExpression = '0 */1 * * *'; // Run once every one hours in prod
 
 const job = new CronJob(scheduleExpression, createAndPostImage);
 
